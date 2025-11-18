@@ -1,5 +1,6 @@
 # User Guide Automation
 This readme gives an overview of user guide automation process
+We are automating release process for the user guide of fictional Acme coportation
 
 There are different release cycles. <br>
 **Major release (Version level)**

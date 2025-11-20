@@ -30,3 +30,18 @@ Files required for the workflow:
 * Updates updates.json file in with updates
 * Uploads the JSON file to the AI agent
 * AI agent updates userguide.md with changes in the JSON file
+
+extract.py <br>
+Parses a Markdown file, detects headings (H1–H6), and creates a JSON file where each section has:
+  - A hierarchical path
+  - The heading level
+  - The section title
+  - The section content
+
+updates.py
+Reads the extracted sections and changes to JSON file.
+Applies one of the supported actions:
+   - `replace` – overwrite the section content
+   - `append` – add content at the end
+   - `prepend` – add content at the beginning
+Regenerates an updated Markdown file.
